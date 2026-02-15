@@ -230,7 +230,7 @@ def main():
     
     print(f"Generated {len(datasets)} datasets.")
     
-    with open("pypdfform_dataset.jsonl", "w") as f:
+    with open("dataset.jsonl", "w") as f:
         for entry in datasets:
             f.write(json.dumps(entry) + "\n")
 
